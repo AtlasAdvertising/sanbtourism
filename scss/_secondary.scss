@@ -1,0 +1,88 @@
+/* **************************************** */
+/*                                          */
+/*    ======  Secondary Template  ======    */
+/*                                          */
+/* **************************************** */
+
+
+// 	Fonts
+// ------------------------------------------
+
+.secondary-content {
+	color: $black;
+	font-size: 15px;
+	line-height: 1.5;
+	ul,
+	ol {
+		padding: 0 0 0 25px;
+	}
+}
+
+
+
+// 	Wrapper
+// ------------------------------------------
+
+.secondary-wrapper {
+	background: #fff;
+	padding: 0 0 50px;
+}
+
+
+
+// 	Hero Image 
+// ------------------------------------------
+
+.secondary-header-wrapper {
+	background: $header-blue;
+	img {
+		width: 100%;
+	}
+}
+
+
+
+// 		My Favorites
+// ------------------------------------------
+
+.PageUtility { 
+	color: #000; 
+	.PageUtility_Wrapper {
+		left: 0;
+		text-align: right;
+		width: auto;
+	}
+	.PageUtility_MyFavorites {
+    display: inline-block;
+	}
+	.UtilityButton {
+		color: #222;
+		display: inline-block;
+		float: none;
+		font-size: 11px;
+		@include breakpoint(medium) {
+			padding: 16px 20px 8px 0;
+		}
+		@include breakpoint(large) {
+			padding: 16px 30px 8px 0;
+		}
+		img { 
+			top: -4px; 
+		}
+		.ImgBg { 
+			right: -6px; 
+			top: 13px; 
+		}
+	}
+	#Utility_Share {
+		padding-right: 0;
+	}
+	#Utility_MyFavorites, 
+	#Utility_AddPage, 
+	#Utility_Print {
+		border: none !important;
+	}
+	.ImgBg {
+		display: none;
+	}
+}

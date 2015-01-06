@@ -1,0 +1,532 @@
+/* **************************************** */
+/*                                          */
+/*          ======  Blog  ======            */
+/*                                          */
+/* **************************************** */
+
+
+#blog {
+	padding: 15px 0 50px;
+}
+
+
+// 		Blog Header
+// ------------------------------------------
+
+.BlogHeader {
+	display: none;
+}
+
+.blog-header {
+	border-bottom: 1px solid rgba(0,0,0,0.15);
+	font-size: 0;
+	margin: 0 0 20px 0;
+	padding: 0 0 20px 0;
+	@include breakpoint(small) {
+		padding: 0;
+	}
+	.image-wrapper {
+		@include breakpoint(small) {
+			display: inline-block;
+			vertical-align: middle;
+			width: 50%;
+		}
+		img {
+			margin: 0 0 0 -23px;
+		}
+	}
+	.blog-title {
+		color: #000;
+		display: block;
+		font-family: 'Avenir W01', sans-serif;
+		font-size: 45px;
+		font-weight: 900;
+		vertical-align: middle;
+		@include breakpoint(small) {
+			display: inline-block;
+			width: 50%;
+		}
+	}
+}
+
+
+// 		Blog Subscribe
+// ------------------------------------------
+
+.blog-search, 
+.blog-subscribe {
+	margin-bottom: 25px;
+}
+
+.blog-subscribe {
+	display: inline-block;
+	font-size: 0;
+	vertical-align: middle;
+	width: 50%;
+	@include breakpoint(small) {
+		width: 25%;
+	}
+	label {
+		color: #2e363e;
+		display: block;
+		font-family:'Avenir W01', sans-serif;
+		font-size: 16px;
+		font-weight: 900;
+		margin: 0 0 5px 0;
+	}
+	#subscribeBox {
+		background: #E3E3E3;
+		border: 1px solid #C2C2C2;
+		font-family:'Avenir W01', sans-serif;
+		font-size: 14px;
+		padding: 7px;
+		vertical-align: top;
+		width: 75%;
+	}
+	#subscribeBtn {
+		@extend %blog-button;
+	}
+}
+
+
+// 		Blog Search
+// ------------------------------------------
+
+.blog-search {
+	display: inline-block;
+	font-size: 0;
+	vertical-align: middle;
+	width: 50%;
+	@include breakpoint(small) {
+		width: 25%;
+	}
+	label {
+		color: #000;
+		display: block;
+		font-family:'Avenir W01', sans-serif;
+		font-size: 16px;
+		font-weight: 900;
+		margin: 0 0 5px 0;
+	}
+	#searchBlogBox {
+		background: #E3E3E3;
+		border: 1px solid #C2C2C2;
+		font-family:'Avenir W01', sans-serif;
+		font-size: 14px;
+		padding: 7px;
+		vertical-align: top;
+		width: 75%;
+	}
+	#searchBlogBtn {
+		@extend %blog-button;
+	}
+}
+
+
+// 		Blog Posts
+// ------------------------------------------
+
+.blog {
+	.back {
+		font-size: 12px;
+		&:hover {
+			color: #42484d;
+		}
+	}
+	
+}
+
+.blogpost-wrapper {
+	display: block;
+	margin: 0 0 50px 0;
+}
+
+
+// 		Blog Posts: Content
+// ------------------------------------------
+.blog-wrapper {
+	.blogpost {
+		background: $blog-post-background;
+		color: $text-grey;
+		font-family: Helvetica, Arial, sans-serif;
+		font-size: 13px;
+		position: relative;
+		@include breakpoint(small) {
+			height: 420px;
+		}
+		@include breakpoint(large) {
+			height: 410px;
+		}
+		.title {
+			@include header(30px);
+			line-height: 1;
+			padding: 0 15px;
+		}
+		.author {
+			color: $text-grey-light;
+			padding: 0 15px;
+		}
+		.summary {
+			font-size: 15px;
+			padding: 20px 15px 70px 15px;
+			@include breakpoint(small) {
+				padding: 15px;
+			}
+			h1, h2, h3, h4, h5, h6 {
+				font-weight: 900;
+			}
+			h1 {
+				font-size: 30px;
+			}
+			h2 {
+				font-size: 28px;
+			}
+			h3 {
+				font-size: 25px;
+			}
+			h4 {
+				font-size: 18px;
+			}
+			h5 {
+				font-size: 16px;
+			}
+			h6 {
+				font-size: 14px;
+			}
+		}
+		.readmore {
+			border-top: 3px solid #edecea;
+			bottom: 0;
+			left: 0;
+			padding: 15px;
+			position: absolute;
+			transition: all 0.1s linear;
+			width: 100%;
+			span {
+				color: #000;
+				font-size: 12px;
+				font-style: italic;
+				font-weight: bold;
+				transition: all 0.1s linear;
+			}
+		}
+		&.detail {
+			background: transparent;
+			box-shadow: none !important;
+			height: auto;
+			.image {
+				display: block;
+				margin: 0 0 20px 0;
+			}
+			.date {
+				background: rgba(0,0,0,0.1) !important;
+			}
+			.title {
+				color: $blue;
+				display: inline-block;
+				font-size: 55px;
+				margin: 0 0 15px 0;
+				vertical-align: middle;
+			}
+			.summary {
+				clear: both;
+				padding: 0;
+			}
+
+		}
+	}
+}
+
+
+// 		Blog Posts: Tags and Social Media
+// ------------------------------------------
+
+.tags {
+	display: table;
+	margin: 20px 0 15px;
+	.date, .author, .categories {
+		background: rgba(0,0,0,0.1);
+		border-radius: 3px;
+		color: #666;
+		display: inline-block;
+		font-family: 'Arial', arial, sans-serif;
+		font-size: 12px;
+		font-style: normal;
+		line-height: 1;
+		margin: 0 5px 5px 0;
+		padding: 5px 10px;
+		i {
+			margin: 0 5px 0 0;
+		}
+	}
+}
+
+.blogpost.detail {
+	.social-media {
+		margin: 0 0 15px;
+		vertical-align: middle;
+		@include breakpoint(small) {
+			float: right;
+		}
+		@include breakpoint(large) {
+			margin: 20px 0 15px;
+		}
+	}
+}
+
+
+// 		Blog Posts: Images
+// ------------------------------------------
+
+.blogpost {
+	.blog-image-placeholder {
+	  background: #ccc;
+	  height: 190px;
+	  max-width: 100%;
+	  width: 370px;
+	}
+	.image {
+		margin: 0 0 10px 0;
+		position: relative;
+		.date {
+			background: $header-blue;
+			color: #fff;
+			font-size: 13px;
+			font-weight: bold;
+			left: 0;
+			padding: 6px 15px;
+			position: absolute;
+			top: 0;
+		}
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+
+// 		Blog Posts: Hover Styles
+// ------------------------------------------
+
+.blogpost-wrapper:hover {
+	.blogpost {
+		box-shadow: 0px 0px 5px 0px rgba(103,103,103,0.25);
+		.readmore span {
+			color: $light-blue;
+		}
+	}
+	.date {
+		background: $light-blue;
+	}
+}
+
+
+// 		Blog Utility 
+// ------------------------------------------
+
+.BlogSidebarAuthors,
+.BlogSidebarTopics {
+	float: left;
+	font-family: Helvetica, Arial, sans-serif;
+	width: 50%;
+	.Title {
+		@include header;
+	}
+	.Content {
+		div {
+			font-size: 0;
+		}
+		a {
+			color: $light-blue;
+			display: inline-block;
+			font-size: 14px;
+			padding-bottom: 5px;
+			&:hover {
+				color: $blue;
+			}
+			&:before {
+				content: "\f061";
+				font-family: 'FontAwesome';
+				margin-right: 7px;
+			}
+		}
+	}
+}
+
+.details-blog-search-subscribe {
+	display: none;
+}
+
+.col-sm-3 {
+	.BlogSidebarAuthors, 
+	.BlogSidebarTopics {
+		float: none;
+		margin-bottom: 20px;
+		width: 100%;
+		.Title {
+			font-size: 22px;
+		}
+	}
+	.details-blog-search-subscribe {
+		display: block;
+		.blog-subscribe,
+		.blog-search {
+			float: none;
+			width: 100%;
+		}
+	}
+}
+
+
+// 		Pager Controls 
+// ------------------------------------------
+
+.PagerControl {
+    background: #555;
+    border-radius: 5px;
+    clear: left;
+    color: #fff;
+    float: left;
+    padding: 5px 15px;
+    margin: 25px 15px;
+    width: auto;
+}
+
+.PagerControl a {
+    color: #fff;
+    padding: 6px 5px;
+    &:hover {
+			background: #666;
+		}
+}
+
+.SelectedNext,
+.SelectedPrev {
+	display: none;
+}
+
+.UnselectedNext {
+	margin-left: -15px;
+}
+
+.UnselectedPrev {
+	margin-right: -10px;
+}
+
+.UnselectedPrev:before {
+  content: "\00ab";
+  margin-right: 5px;
+}
+
+.UnselectedNext:after {
+  content: "\00bb";
+  margin-left: 5px;
+}
+
+
+// 		Comments 
+// ------------------------------------------
+
+table.BlogPanel {
+	width: 100%;
+}
+
+.BlogCommentsTitle,
+.BlogLeaveComment {
+  border-top: 1px solid #EEE;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 900;
+  margin: 10px 0 25px;
+  padding-top: 15px;
+  width: 100%;
+}
+
+hr.PostCommentSeparatorLine {
+	display: none;
+}
+
+.CommentDetail td {
+  vertical-align: top;
+}
+
+.CommentUserPicture {
+  margin-right: 15px;
+}
+
+.CommentUserName {
+	display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.CommentText,
+.CommentDate {
+  color: #666;
+  font-size: 14px;
+}
+
+.CommentDate {
+	display: inline-block;
+  margin-top: 5px;
+}
+
+table.CommentForm label {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 900;
+	margin: 12px 0 5px;
+}
+
+.TextBoxField, 
+.TextAreaField {
+	background: #E3E3E3;
+	border: 1px solid #C2C2C2;
+	padding: 7px;
+	width: 100%;
+}
+
+.BlogRequiredValidator {
+	margin: 0 0 20px 0;
+}
+
+
+// 		Search Results 
+// ------------------------------------------
+
+.blog-search-results {
+	ul {
+		list-style: none;
+		li {
+			padding: 0 0 20px 0;
+			margin: 0 0 20px 0;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+			.title {
+				font-weight: bold;
+				font-size: 22px;
+				color: #00687e;
+				line-height: 1.1;
+				display: inline-block;
+				margin: 0 0 10px 0;
+				&:hover {
+					color: #42484d;
+				}
+			}
+			div {
+				font-size: 13px;
+				color: #42484d;
+				margin: 0 0 10px 0;
+			}
+			.link {
+				font-style: italic;
+				font-size: 14px;
+				color: #00687e;
+				font-weight: bold;
+				&:hover {
+					color: #42484d;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,100 @@
+/* Mixins */
+
+/*
+
+@mixin yellow-button {
+	padding: 10px 25px;
+	background: #FFA706;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-family: 'TideSans-500Dudette';
+	&:hover {
+		background: $button-red;
+		text-decoration: none;
+	}
+}
+
+@mixin button($text,$color,$hover,$border-radius) {
+	color: $text;
+	background: $color;
+	border-radius: $border-radius;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	padding: 10px 25px;
+	text-transform: uppercase;
+	&:hover {
+		background: $hover;
+		text-decoration: none;
+	}	
+}
+
+*/
+
+
+@mixin header($header-size: 30px, $color: $blue) {
+	color: $color;
+	font-family: 'FuturaBTW01-MediumConde', sans-serif;
+	font-size: $header-size;
+	margin-bottom: 0;
+}
+
+@mixin webpart-area {
+	background: $background-blue;
+	overflow: hidden;
+	padding: 0 0 35px;
+}
+
+@mixin helvetica {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/* Placeholders */
+
+%home-page-header {
+	border-bottom: 4px solid $green;
+	color: $grey;
+	font-family: 'Futura W01 Medium', sans-serif;
+	font-size: 26px;
+	line-height: 1.5;
+	margin-bottom: 10px;	
+	padding-bottom: 10px;
+}
+
+
+%widget-title {
+	background: $offwhite;
+	color: $blue;
+  font-family:'FuturaBTW01-MediumConde', sans-serif;
+  font-size: 38px;
+  letter-spacing: -0.025em;
+  line-height: 1;
+  margin: 0;
+  padding: 10px;
+}
+
+%date {
+	font-family: 'Futura W01 Book', sans-serif;
+	color: $grey;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+%input {
+	background: #ccc;
+	border: none;
+	outline: 0;
+	padding: 6px 5px;
+}
+
+%blog-button {
+		background: url(/TVAED/images/white-arrow.png) no-repeat center center $light-blue;
+		border: none;
+		height: 36px;
+		transition: all 0.1s linear;
+		width: 36px;
+		&:hover {
+			background-color: $header-blue;
+		}
+}

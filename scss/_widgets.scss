@@ -1,0 +1,183 @@
+/* **************************************** */
+/*                                          */
+/*         ======  Widgets  ======          */
+/*                                          */
+/* **************************************** */
+
+
+// 		Sidebar
+// ------------------------------------------
+
+.sideBar-block, 
+.widget-block, 
+#Sidebar_Downloads {
+  padding: 0 0 20px 0;
+  border-bottom: 1px dashed #000;
+  margin: 0 0 20px 0;
+}
+
+.sideBar-block:last-child, 
+.widget-block:last-child, 
+#Sidebar_Downloads:last-child {
+  padding: 0;
+  margin: 0;
+  border-bottom: none;
+}
+
+
+
+// 		Headers
+// ------------------------------------------
+
+#Sidebar_Downloads {
+	.SidebarTitle {
+		@extend %widget-title;
+	}
+}
+
+.widget-block {
+	h2 {
+		@extend %widget-title;
+	}
+}
+
+
+// 		Widget Containers
+// ------------------------------------------
+
+.widget-block { 
+	border-top: 10px solid $blue; 
+	.widget-block-content,
+	.SidebarText {
+	  background: #f4f4f4;
+	  padding: 10px;
+		a {
+		  color: $blue;
+		  font-weight: bold;
+		}
+	}
+	.widget-block-content,
+	.local-image {
+		font-size: 14px;
+	}
+}
+
+
+// 		Downloads
+// ------------------------------------------
+
+#Sidebar_Downloads { 
+	border-top: 10px solid #002b58; 
+	ul {
+		padding:0px; 
+		margin:0px; 
+		padding-bottom:10px; 
+		border-top:solid 1px #999999;
+		li {
+		  display: block;
+		  margin: 0px !important;
+		  color: #3D2625;
+		  font-family: Arial, Helvetica, sans-serif;
+		  font-size: 12px;
+		  line-height: 18px;
+		  padding: 10px 0;
+		  list-style: none;
+		  border-bottom: 1px solid #999999;
+			&:before{content:"" !important; font-size: auto; padding-right:0px !important;}
+		}
+	}
+	.SidebarListMyFavorites {
+	  float: right;
+	  padding-right: 5px;
+	  width: 16px;
+	}
+	.SidebarListMyFavorites img {
+	  cursor: pointer;
+	}
+	.SidebarListIcon {
+	  float: left;
+	  padding: 3px 10px 3px 0px;
+	}
+	.SidebarListText {
+	  font-family: arial;
+	  color: #555555;
+	  font-size: 13px;
+	  line-height: 20px;
+		a {
+		  color: #555555;
+		  font-weight: bold;
+		  text-decoration: none;
+		  font-family: Arial, Helvetica, sans-serif;
+		  font-size: 12px;
+			&:hover {
+			  text-decoration: underline;
+			}
+		}
+	}
+	.SidebarList {
+	  background: #f5f3f0;
+	  padding: 5px 15px 15px;
+	}
+	.SidebarText {
+	  background: #f5f3f0;
+	  color: $blue;
+	  font-family: arial;
+	  font-size: 11px;
+	  height: 15px;
+	  line-height: 20px;
+	  padding: 0 15px;
+	}
+	.addtofavorites {
+	  float: right;
+	}
+	.downloadnow {
+	  float: left;
+	}
+}
+
+
+
+
+// 		Did You Know
+// ------------------------------------------
+
+
+
+
+// 		Quick Links
+// ------------------------------------------
+
+.widget-block .widget-block-content {
+	.LinksList {
+	  list-style: none;
+	  padding: 10px 0 10px 20px;
+	  .fa-li { 
+	  	color: #555; 
+	  	font-size: 11px;
+	  	top: 0.643em; 
+	  }
+		li {
+		  padding: 0 0 5px;
+		  position: relative;
+			a { 
+				color: $light-blue; 
+				font-weight: bold; 
+				&:hover { 
+					opacity: 0.7; 
+				}
+			}
+		}
+	}
+}
+
+
+// 		Photo Callout
+// ------------------------------------------
+
+.SidebarImage {
+	img {
+		max-width: 100%;
+	}
+}
+
+

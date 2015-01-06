@@ -1,0 +1,78 @@
+/* **************************************** */
+/*                                          */
+/*         ======  Header  ======           */
+/*                                          */
+/* **************************************** */
+
+
+#header {
+	background: $header-blue;
+	height: 130px;
+	margin: 0 0 4px;
+	position: relative;
+	width: 100%;
+	&:after {
+		background: #fff;
+		border-bottom: 3px solid $header-blue;
+		bottom: -6px;
+		content: "";
+		left: 0;
+		height: 6px;
+		position: absolute;
+		width: 100%;
+		z-index: 1;
+	}	
+}
+
+#header {
+	.header-hump {
+		bottom: -50px;
+		left: -110px;
+		max-width: none;
+		position: absolute;
+		width: 351px;
+		z-index: 2;
+	}
+}
+
+
+// 		Logo 
+// ------------------------------------------
+
+#header .logo { 
+	height: 100px;
+	margin: 10px 0 0 0; 
+}
+
+
+// 		Google Translate 
+// ------------------------------------------
+
+#google_translate_element {
+	.skiptranslate { 
+		font-size: 0px;
+		span { 
+			display: none; 
+		} 
+		> div { float: left; }
+		select.goog-te-combo { 
+			background: none;
+			border: 1px solid #ffffff;
+			border: 1px solid rgba(0, 0, 0, 0);
+			color: #fff;
+			font-size: 13px;
+			font-style: italic;
+			font-style: normal;
+			height: 20px;
+			margin: 0;
+			padding: 0;
+			width: 130px;
+			option { 
+				color: #001c39; 
+			}
+			&:hover { 
+				text-decoration: underline; 
+			}
+		}
+	}
+}

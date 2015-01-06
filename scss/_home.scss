@@ -1,0 +1,281 @@
+/* **************************************** */
+/*                                          */
+/*          ======  Home  ======            */
+/*                                          */
+/* **************************************** */
+
+
+// 		Hero Slider
+// ----------------------------------------
+
+#hero-wrapper {
+	background: $header-blue;
+	top: -6px;
+	width: 100%;
+	.slide.slick-slide {
+		padding: 0 5px 5px;
+	}
+	// .slide-inner-wrapper {
+	// 	position: relative;
+	// }
+}
+
+.slick-track {
+	min-width: 100%;
+}
+
+.caption {
+	@include helvetica;
+	background: rgba(0,0,0,0.8);
+	bottom: 0;
+	color: $light-blue;
+	display: none;
+	font-weight: bold;
+	line-height: 2;
+	padding: 5px 10px;
+	position: absolute;
+	width: 100%;
+	.title {
+		font-size: 16px;
+	}
+	.description {
+		color: #fff;
+		font-size: 13px;
+		font-weight: normal;
+		line-height: 1.5;
+	}
+	.details-link {
+		
+	}
+}
+
+.slide:hover{
+	.caption {
+		display: block;
+	}
+}
+
+.image {
+	position: relative;
+	img {
+		display: inline-block !important;
+	}
+}
+
+
+// 		Welcome Area
+// ----------------------------------------
+
+#map-welcome {
+	padding: 0 0 45px;
+}
+
+#welcome {
+	@include helvetica;
+	color: $header-blue;
+	font-size: 15px;
+	line-height: 1.5;
+	h2,
+	h3 {
+		font-family:'FuturaBTW01-MediumConde', sans-serif;
+		line-height: 1.1;
+	}
+	h3 {
+		font-size: 30px;
+		letter-spacing: -1px;
+	}
+	h2 {
+		color: $blue;
+		font-size: 55px;
+		text-transform: uppercase;
+	}
+}
+
+.welcome-button {
+	background: $light-blue;
+	color: #fff;
+	float: right;
+	font-weight: bold;
+	padding: 10px 20px;
+}
+
+
+// 		CONTENT BOXES
+// ----------------------------------------
+
+#content-box-area { 
+	@include webpart-area;
+	border-bottom: 3px solid $header-blue;
+}
+
+.content-box {
+  color: #fff;
+  height: 500px;
+  padding: 20px 20px 0 20px;
+	.contentBox-header {
+    border-bottom: 3px solid #25aae1;
+    margin: 0 0 20px 0;
+    padding: 0 0 5px 0;
+	  position: relative;
+	}
+	.image-wrapper {
+		border: 7px solid #ffffff;
+		height: 185px;
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+	}
+	img {
+		box-sizing: border-box;
+		left: 50%;
+		position: absolute;
+		top: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		width: 100%;
+	}
+	h3 {
+		@include header(32px, #fff);
+    text-transform: uppercase;
+    @include breakpoint(large) {
+    	font-size: 38px;
+    }
+	}
+	a:hover {
+    color: #85c4ff;
+	}
+	.title {
+		color: $light-blue;
+    font-family: 'Futura W01 Medium', sans-serif;
+    font-size: 30px;
+    line-height: 1;
+    margin: 20px 0 10px;
+	}
+	.description {
+		color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+	}
+	.link a {
+		display: inline-block;
+    color: $light-blue;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+		&:hover {
+		  text-decoration: none;
+		  color: #25aae1;
+		}
+	}
+	.controls {
+    position: absolute;
+    right: 0;
+    top: 10px;
+		.triangle-left {
+		  border-bottom: 10px solid transparent;
+		  border-right: 10px solid #ffffff;
+		  border-top: 10px solid transparent;
+		  height: 0;
+		  margin: 3px 0 0 6px;
+		  width: 0;
+		}
+		.triangle-right {
+		  border-bottom: 10px solid transparent;
+		  border-left: 10px solid #ffffff;
+		  border-top: 10px solid transparent;
+		  height: 0;
+		  margin: 3px 0 0 8px;
+		  width: 0;
+		}
+		div {
+		  border-radius: 3px;
+		  cursor: pointer;
+		  float: left;
+		  height: 25px;
+		  width: 25px;
+		  background: #25aae1;
+		  margin: 0 0 0 5px;
+		}
+	}
+	#ThingsToDo,
+	#events-and-highlights {
+	  height: 100%;
+	  overflow: hidden;
+	  position: relative;
+		.thingToDo {
+		  position: absolute;
+		  width: 100%;
+		}
+	}
+	#PlacesToStay {
+	  height: 100%;
+	  position: relative;
+	  overflow: hidden;
+		.placeToStay {
+		  position: absolute;
+		  width: 100%;
+		}
+	}
+}
+
+.controls .left-click:hover { opacity: 0.7; }
+.controls .right-click:hover { opacity: 0.7; }
+
+
+// Twitter and Blog Feeds
+// -----------------------------------------
+
+#twitter-blog {
+	@include webpart-area;
+}
+
+.view-all-link {
+	font-size: 13px;
+	position: absolute;
+	right: 0;
+	top: 40%;
+}
+
+.blog-posts-wrapper {
+	margin: 25px 0 0;
+	.blogpost {
+		padding: 0 0 15px 45px;
+		position: relative;
+	}
+	.fa-li {
+		font-size: 20px;
+		left: 0;
+		top: 0.142857em;
+	}
+}
+
+
+// 		UPCOMING
+// -----------------------------------------
+
+#upcoming { 
+	background: $background-blue;
+}
+
+#upcoming h3 { font-weight: normal; font-size: 26px; line-height: 1; border-bottom: 3px solid #25aae1; margin: 0; font-family: 'museo900-regular', sans-serif; }
+#upcoming .infoBtn { height: 26px; width: 161px; background: #25aae1; position: relative; margin: 20px 0px 0px 0px; }
+#upcoming .infoBtn a { display: block; padding: 3px 10px; color: #ffffff; font-size: 11px; font-weight: bold; }
+#upcoming .infoBtn a:hover { text-decoration: none; }
+#upcoming .infoBtn .infoBtnPoint { position: absolute; left: 161px; top: 0; width: 0; height: 0; border-top: 13px solid transparent; border-bottom: 13px solid transparent; border-left: 10px solid #25aae1; }
+#upcoming .ContentRotator { position: relative; }
+#upcoming .ContentRotator .ContentRotator_Toggles { position: absolute; left: 395px; top: 5px; }
+#upcoming .ContentRotator .ContentRotator_Toggles a { margin: 0 5px 0 0; }
+#upcoming .ContentRotator #rotatorImage img { width: 100%; height: auto; }
+#upcoming .ContentRotator #rotatorText { padding: 30px 0 0 0; }
+#upcoming .ContentRotator #rotatorText .Title { font-weight: bold; font-size: 24px; color: #000000; font-family: 'Futura W01 Medium', sans-serif; line-height: 1; margin: 0 0 5px 0; }
+#upcoming .ContentRotator #rotatorText .Content h2 { margin: 5px 0; }
+#upcoming .ContentRotator #rotatorText .Content h3 { font-size: 16px; color: #000000; margin: 5px 0; border: none; }
+#upcoming .ContentRotator #rotatorText .Content h4 { font-size: 12px; color: #000000; margin: 5px 0; }
+#upcoming .ContentRotator #rotatorText .Content h5 { margin: 5px 0; }
+#upcoming .ContentRotator #rotatorText .Content p { font-size: 12px; color: #000000; margin: 5px 0; }
+#upcoming .ContentRotator #rotatorText a { font-weight: bold; font-size: 13px; color: #00508f; }
+#upcoming #eventScroller #eventScrollerWrapper { overflow: auto; max-height: 250px; }
+#upcoming #eventScroller #eventScrollerWrapper ul { list-style: none; }
+#upcoming #eventScroller #eventScrollerWrapper .item { margin: 0 0 20px 0; }
+#upcoming #eventScroller #eventScrollerWrapper .item .Date { font-size: 12px; color: #555555; }
+#upcoming #eventScroller #eventScrollerWrapper .item .Title a { font-size: 16px; font-weight: bold; color: #222222; }
+#upcoming #eventScroller #eventScrollerWrapper .item .Description { font-size: 12px; color: #555555; }

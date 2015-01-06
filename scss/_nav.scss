@@ -1,0 +1,312 @@
+/* **************************************** */
+/*                                          */
+/*           ======  Nav  ======            */
+/*                                          */
+/* **************************************** */
+
+
+// 		Utility Nav
+// ------------------------------------------
+
+#header {
+	#socialMedia {
+		ul { 
+			float: right; 
+			list-style: none; 
+			position: relative;
+		} 
+		li { 
+			background: $light-blue;
+			color: #fff;
+			float: left; 
+			margin-left: 1px;
+			padding: 6px 12px;
+			&:hover { 
+				opacity: 0.65; 
+			}
+			a {
+				color: #fff;
+			}
+		}
+		#searchBox #search { 
+			float: right; 
+			margin: 3px 3px 0 0; 
+			opacity: 0; 
+			width: 0px; 
+		}
+		.search-open { 
+			z-index: 50; 
+		}
+		.search-closed { 
+			z-index: -1; 
+		}
+		#searchBtn { 
+			cursor: pointer; 
+		}
+		#searchbtn { 
+			display: none; 
+		}
+	}
+	#quickNav { 
+		margin: 0 0 0 0; 
+		ul { 
+			list-style: none; 
+			float: left; 
+		}
+		li { 
+			float: left; 
+			margin: 0 20px 0 0; 
+			a { 
+				color: #fff; 
+				font-size: 13px;
+			} 
+		}
+	}
+}
+
+
+// 		Main Nav
+// ------------------------------------------
+
+#menu { 
+	list-style: none; 
+	margin:0; 
+	padding: 0; 
+	min-height:35px; 
+	li {
+    border: none;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    &:hover {
+    	.dropdown_1column,
+    	.dropdown_2columns,
+    	.dropdown_3columns,
+    	.dropdown_4columns,
+    	.dropdown_5columns {
+    		left: -1px; 
+    		top: auto;
+    	}
+			.align_right {
+		    left: auto !important;
+		    right: -1px !important;
+		    top: auto !important;
+			}
+
+    }
+    &:last-child a { 
+    	padding-right: 0; 
+    }
+    a {
+			color: #fff;
+			display: block;
+			font-family:'FuturaBTW01-MediumConde', sans-serif;
+			font-size: 31px;
+			letter-spacing: -1px;
+			padding: 10px 38px 16px;
+			text-decoration: none;
+			text-transform: uppercase;
+			&:first-child { 
+				padding-left: 0; 
+			}
+    }
+    > a:hover {
+    	color: $light-blue;
+    }
+	}
+	li.active a{
+		color: $light-blue;
+	}
+	.menu_right {
+    float: right;
+    margin-right: 0px;
+	}
+
+}
+
+
+// 		Main Nav: Dropdowns
+// ------------------------------------------
+
+.dropdown_1column, 
+.dropdown_2columns {
+  background: #fff;
+  border-bottom: 8px solid #25aae1;
+  float: left;
+  left: -999em;
+  margin: 0px auto;
+  padding: 10px 5px 10px 5px;
+  position: absolute;
+  text-align: left;
+}
+
+.dropdown_1column {
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  width: 500px;
+  z-index: 9999;
+}
+
+.dropdown_2columns {
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    width: 508px;
+    z-index: 9999;
+}
+
+
+// 		Main Nav: Dropdown Links
+// ------------------------------------------
+
+.submenuLinks {
+  float: left;
+  margin-right: 5%;
+  width: 36%;
+  a {
+		color: #000 !important;
+		font-family: arial !important;
+		font-size: 13px !important;
+		font-weight: bold !important;
+		letter-spacing: 0px !important;
+		padding: 7px 10px !important;
+		text-transform: none !important;
+  	&:hover {
+  		color: #00508f !important;
+  	}
+  }
+}
+
+
+// 		Main Nav: Teaser
+// ------------------------------------------
+
+.Teaserimage img {
+	height: auto;
+	max-width: 100%;
+	width: 280px;
+}
+
+.TeaserWrapper {
+  float: right;
+  width: 53%;
+}
+
+.TeaserLink {
+  padding: 10px 0px !important;
+}
+
+.TeaserTitle {
+  color: #333333;
+  font-family: 'Futura W02 Heavy', sans-serif;
+  font-size: 24px !important;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.TeaserDescription {
+  margin-top: 15px;
+}
+
+.TeaserDescription {
+  color: #555555;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.TeaserLink {
+  color: #00508f !important;
+  font-family: 'Arial', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: bold !important;
+  letter-spacing: 0px !important;
+  text-transform: none !important;
+  &:hover {
+    color: #000 !important;
+  }
+}
+
+
+// 		Secondary Nav
+// ------------------------------------------
+
+	.nav-wrapper {
+		margin: 10px 0 20px 10px;
+		ul {
+			list-style: none;
+			padding: 0;
+			li {
+				float: left;
+				margin:0 0 5px 0;
+				position: relative;
+				> a:not(:only-child):after {
+					content: "\f0d7"; 
+					font-family: "FontAwesome"; 
+					font-size: 12px; 
+					margin-left: 5px;
+					position: absolute;
+				}
+				> a:not(:only-child) {
+    			padding-right: 20px;
+				}
+				a {
+					background-color: #fff; 
+					border: 1px solid $header-blue;
+					color: $blue; 
+					display: inline-block;
+					font-family: Arial, sans-serif; 
+					font-size: 14px; 
+					font-weight: normal; 
+					margin-left: -1px;
+					padding: 5px 10px; 
+					text-align: left; 
+					text-transform: none; 
+					&.Active {
+						background-color: $light-blue; 
+						color: #fff;
+					}
+					&:hover {
+						color:#fff; 
+						background-color: $blue;
+						text-decoration: none;
+					}
+				}
+				&.HighLighted a {
+					background-color: $blue; 
+					color: #fff;
+					display: inline-block;
+					white-space: nowrap;
+				}
+				&:hover {
+					ul {
+						display: block;
+					}
+				}
+				ul {
+					background: $blue;
+					border-radius: 2px;
+					display: none;
+					overflow: hidden;
+					padding: 10px 0 20px;
+					position: absolute;
+					top: 102%;
+					z-index: 10;
+					li {
+						margin-bottom: 0;
+						width: 100%;
+						a {
+							background: transparent;
+							border: 0;
+							color: #fff;
+							width: 100%;
+							&:hover {
+								background: $header-blue;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
