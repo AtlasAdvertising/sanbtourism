@@ -1,0 +1,20 @@
+/* **************************************** */
+/*                                          */
+/*          ------  Search  ------          */
+/*                                          */
+/* **************************************** */
+
+.SearchResultsWrapper {
+	padding-top: 50px;
+	td {
+		padding: 5px 0;
+	}
+	select {
+		height: 37px;
+	}
+	.ContentButton {
+		@include button;
+		width: 120px;
+	}
+}
+

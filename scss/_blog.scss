@@ -1,12 +1,12 @@
 /* **************************************** */
 /*                                          */
-/*          ======  Blog  ======            */
+/*          ------  Blog  ------            */
 /*                                          */
 /* **************************************** */
 
 
 #blog {
-	padding: 15px 0 50px;
+	padding: 45px 0 50px;
 }
 
 
@@ -36,11 +36,10 @@
 		}
 	}
 	.blog-title {
-		color: #000;
+		color: $header-blue;
 		display: block;
-		font-family: 'Avenir W01', sans-serif;
-		font-size: 45px;
-		font-weight: 900;
+		font-family:'FuturaBTW01-MediumConde', sans-serif;
+		font-size: 55px;
 		vertical-align: middle;
 		@include breakpoint(small) {
 			display: inline-block;
@@ -61,30 +60,41 @@
 .blog-subscribe {
 	display: inline-block;
 	font-size: 0;
-	vertical-align: middle;
+	vertical-align: top;
 	width: 50%;
 	@include breakpoint(small) {
 		width: 25%;
 	}
+	.EditingFormControlNestedControl {
+		clear: none;
+		float: left;
+		padding-right: 3%;
+		width: 43.5%;
+		&:nth-child(2) {
+			padding-right: 0;
+		}
+	}
 	label {
-		color: #2e363e;
+		@include helvetica;
+		color: #000;
 		display: block;
-		font-family:'Avenir W01', sans-serif;
 		font-size: 16px;
-		font-weight: 900;
+		font-weight: bold;
 		margin: 0 0 5px 0;
 	}
 	#subscribeBox {
-		background: #E3E3E3;
-		border: 1px solid #C2C2C2;
-		font-family:'Avenir W01', sans-serif;
-		font-size: 14px;
-		padding: 7px;
-		vertical-align: top;
-		width: 75%;
+		@include blog-input;
+		@include helvetica;
 	}
 	#subscribeBtn {
 		@extend %blog-button;
+	}
+	.FormButton {
+		background: url(/TVAED/images/white-arrow.png) no-repeat center center #27AAE1;
+		border: none;
+		height: 36px;
+		transition: all 0.1s linear;
+		width: 36px;
 	}
 }
 
@@ -101,21 +111,16 @@
 		width: 25%;
 	}
 	label {
+		@include helvetica;
 		color: #000;
 		display: block;
-		font-family:'Avenir W01', sans-serif;
 		font-size: 16px;
-		font-weight: 900;
+		font-weight: bold;
 		margin: 0 0 5px 0;
 	}
 	#searchBlogBox {
-		background: #E3E3E3;
-		border: 1px solid #C2C2C2;
-		font-family:'Avenir W01', sans-serif;
-		font-size: 14px;
-		padding: 7px;
-		vertical-align: top;
-		width: 75%;
+		@include blog-input;
+		@include helvetica;
 	}
 	#searchBlogBtn {
 		@extend %blog-button;
@@ -164,7 +169,7 @@
 		}
 		.author {
 			color: $text-grey-light;
-			padding: 0 15px;
+			padding-left: 15px;
 		}
 		.summary {
 			font-size: 15px;
@@ -238,6 +243,14 @@
 }
 
 
+// Blog Posts: Back to all posts link
+// ------------------------------------------
+
+.back-to-blog-link {
+	@include back-link;
+}
+
+
 // 		Blog Posts: Tags and Social Media
 // ------------------------------------------
 
@@ -288,6 +301,7 @@
 	.image {
 		margin: 0 0 10px 0;
 		position: relative;
+		max-width: 100%;
 		.date {
 			background: $header-blue;
 			color: #fff;
@@ -382,22 +396,25 @@
 // ------------------------------------------
 
 .PagerControl {
-    background: #555;
-    border-radius: 5px;
-    clear: left;
-    color: #fff;
-    float: left;
-    padding: 5px 15px;
-    margin: 25px 15px;
-    width: auto;
+  background: #555;
+  border-radius: 5px;
+  clear: left;
+  color: #fff;
+  float: left;
+  padding: 5px 15px;
+  margin: 25px 15px;
+  width: auto;
+  &:hover {
+		background: #666;
+		a {
+			color: #fff;
+		}
+  }
 }
 
 .PagerControl a {
-    color: #fff;
-    padding: 6px 5px;
-    &:hover {
-			background: #666;
-		}
+  color: #fff;
+  padding: 6px 5px;
 }
 
 .SelectedNext,
@@ -435,8 +452,8 @@ table.BlogPanel {
 .BlogLeaveComment {
   border-top: 1px solid #EEE;
   display: inline-block;
-  font-size: 24px;
-  font-weight: 900;
+  font-family:'FuturaBTW01-MediumConde', sans-serif;
+  font-size: 32px;
   margin: 10px 0 25px;
   padding-top: 15px;
   width: 100%;
@@ -474,8 +491,8 @@ hr.PostCommentSeparatorLine {
 
 table.CommentForm label {
 	display: inline-block;
-	font-size: 14px;
-	font-weight: 900;
+	font-family:'FuturaBTW01-MediumConde', sans-serif;
+	font-size: 20px;
 	margin: 12px 0 5px;
 }
 
@@ -483,7 +500,10 @@ table.CommentForm label {
 .TextAreaField {
 	background: #E3E3E3;
 	border: 1px solid #C2C2C2;
+	font-size: 14px;
+	font-weight: bold;
 	padding: 7px;
+	text-transform: lowercase;
 	width: 100%;
 }
 
@@ -528,5 +548,26 @@ table.CommentForm label {
 				}
 			}
 		}
+	}
+}
+
+
+// 		Blog Posts on Other Pages
+// ------------------------------------------
+
+.blog-posts-wrapper {
+	margin: 25px 0 0;
+	.title {
+		@include title;
+	}
+	.blogpost {
+		list-style: none;
+		padding: 0 0 15px 45px;
+		position: relative;
+	}
+	.fa-li {
+		font-size: 20px;
+		left: 0;
+		top: 0.142857em;
 	}
 }

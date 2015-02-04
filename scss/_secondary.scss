@@ -1,6 +1,6 @@
 /* **************************************** */
 /*                                          */
-/*    ======  Secondary Template  ======    */
+/*    ------  Secondary Template  ------    */
 /*                                          */
 /* **************************************** */
 
@@ -20,7 +20,7 @@
 
 
 
-// 	Wrapper
+// 	Wrappers
 // ------------------------------------------
 
 .secondary-wrapper {
@@ -28,6 +28,9 @@
 	padding: 0 0 50px;
 }
 
+.secondary-content-wrapper {
+	padding-top: 25px;
+}
 
 
 // 	Hero Image 
@@ -35,9 +38,17 @@
 
 .secondary-header-wrapper {
 	background: $header-blue;
+	position: relative;
+	top: -8px;
 	img {
 		width: 100%;
 	}
+}
+
+.secondary-header-wrapper.no-image {
+	background: none;
+	height: 45px;
+	position: static;
 }
 
 

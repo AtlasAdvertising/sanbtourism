@@ -1,0 +1,78 @@
+/* **************************************** */
+/*                                          */
+/*      ------  Media Center  ------        */
+/*                                          */
+/* **************************************** */
+
+
+// Content Wrapper
+
+#MediaWrapper {
+	padding-top: 50px;
+}
+
+
+// Title
+
+#media-center-title {
+	@include header(55px);
+}
+
+
+// Headers
+
+#MediaWrapper {
+	h2 {
+		@include header(38px);
+		@include header-rule;
+	}
+}
+
+
+// Twitter Feed
+
+#mediaCenterTwitterFeed { 
+	margin: 25px 0 0;
+}
+
+
+// Read More/Less Buttons
+
+.buttons {
+	text-align: center;
+}
+
+.show-more.button,
+.show-less.button {
+	@include button;
+}
+
+
+/* ------------------------------------------------------- */
+
+// OLD SHIT
+
+/* ------------------------------------------------------- */
+
+
+
+/*# MEDIA CENTER/Video Gallery #*/
+.mcSidebarVideoGallery { position: relative; }
+.mcSidebarVideoGallery h2 {  }
+.mcSidebarVideoGallery .mcSidebarViewAll { position: absolute; right: 0; top: -5px; }
+.mcSidebarVideoGallery .mcSidebarViewAll a { font-size: 11px; color: #888888; }
+.mcSidebarVideoGalleryCntr {  }
+.mcSidebarVideoGalleryCntr .mcSidebarVideoGallery_Thumbnail { cursor: pointer; color: #222222; font-size: 12px; font-weight: bold; padding: 0 10px 0 0; width: 25%; float: left; box-sizing:border-box;-moz-box-sizing:border-box; }
+.mcSidebarVideoGalleryCntr a { display: block; }
+/*# MEDIA CENTER/News Feed #*/
+#mediaNews { padding: 0 0 0 20px; list-style-image: url('/SanBernardino/images/rss.png'); }
+#mediaNews .newsItem { margin: 0 0 20px 0; }
+#mediaNews .title { margin: 0 0 5px 0; font-weight: bold; font-size: 18px; line-height: 18px; color: #555555; }
+#mediaNews .date { margin: 0 0 5px 0; font-style: italic; font-size: 14px; line-height: 14px; color: #888888; }
+#mediaNews .description { margin: 0 0 5px 0; font-size: 14px; line-height: 14px; color: #555555; }
+#mediaNews a { font-weight: bold; color: #b71813; }
+/*# MEDIA CENTER/Twitter Feed #*/
+#mediaCenterTwitterFeed > a { margin: 5px 0 0 0; font-size: 11px; color: #888888; float: right; }
+#mediaCenterTwitterFeed .ExternalTwitterFeed ul { margin: 0 0 0 30px; list-style-image: url('/SanBernardino/images/twitter_feed_icon.png'); }
+#mediaCenterTwitterFeed .ExternalTwitterFeed ul li { padding: 10px 0; }
+#mediaCenterTwitterFeed .ExternalTwitterFeed a { font-weight: bold; color: #b71813; }

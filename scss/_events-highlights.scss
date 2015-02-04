@@ -1,0 +1,61 @@
+/* **************************************** */
+/*                                          */
+/*   ------  Events & Highlights  ------    */
+/*                                          */
+/* **************************************** */
+
+
+.Title {
+  color: $light-blue;
+  font-family: 'Futura W01 Medium', sans-serif;
+  font-size: 30px;
+  line-height: 1;
+  margin: 0 0 10px;
+}
+.Description, .Description p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #222;
+}
+#highlightsList .Title {
+  margin: 20px 0 10px;
+}
+#eventsList, #highlightsList {
+  list-style: none;
+  padding: 0;
+}
+
+#eventsFeed h2 {
+  @include header(38px);
+  @include header-rule;
+}
+#eventsFeed #eventsList .item .Date {
+  line-height: 1.5;
+  font-size: 14px;
+}
+/* ------------------------------------------------------- */
+
+// OLD SHIT
+/* ------------------------------------------------------- */
+/*# EVENTS #*/
+
+#eventsFeed #eventsList .item {
+  padding: 20px 0;
+}
+/*# HIGHLIGHTS #*/
+
+#highlightsFeed {} #highlightsFeed h2 {
+  border-bottom: 3px solid #1f87e7;
+  line-height: 38px;
+  margin: 0;
+}
+#highlightsFeed {
+  list-style: none;
+}
+#highlightsFeed #highlightsList .highlight {
+  padding: 20px 0;
+}
+#highlightsFeed #highlightsList .highlight .Link {
+  display: block;
+  margin: 0 0 20px 0;
+}

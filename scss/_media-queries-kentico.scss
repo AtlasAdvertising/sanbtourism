@@ -1,0 +1,119 @@
+// Old Breakpoints from Kentico
+
+/*# MEDIA QUERIES #*/
+/* Large desktop */
+@media (min-width: 1250px) {
+
+}
+
+/* Medium desktop */
+@media (min-width: 1019px) and (max-width: 1249px) {
+
+  #header { height: 121px; }
+  #header > .container { height: 121px; }
+  #header #socialMedia { margin: 0 0 10px 0; }
+  #menu li a { padding: 10px 20px 16px; }
+  
+  .content-box { height: 375px; }
+  
+  .PageUtility .UtilityButton { padding: 8px 4px; }
+  
+  #upcoming .ContentRotator #rotatorText {  }
+  #upcoming .ContentRotator .ContentRotator_Toggles { left: 330px; }
+  
+  #siteMap li { width: 155px; }
+  
+  .tp-simpleresponsive .tp-caption.Custom2 { width: 550px !important; }
+  .tp-simpleresponsive .tp-caption.Custom3 { top: 245px !important; }
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1018px) {
+        
+	#welcome h3 { font-size: 16px; }
+	#welcome h2 { font-size: 52px; }
+        
+  #header { height: 109px; }
+  #header > .container { height: 109px; }
+  #header #socialMedia { margin: 0 0 0 0; }
+  #header #quickNav { margin: 5px 0 0 0; }
+  #menu li a { font-size: 18px; line-height: 18px; padding: 16px 16px; }
+  
+  .content-box { height: 450px; }
+  
+  .sideBar-block .PageUtility { height: 72px; }
+  
+  #upcoming .ContentRotator .ContentRotator_Toggles { left: 245px; }
+        
+	#footer #newsletter #signupForm input { width: 155px; }
+	#footer #newsletter #signupForm .footerBtn { width: 70px; }
+	#footer #contact span { margin: 30px 15px 0 0; font-size: 1em; }
+  #footer #contact > a { font-size: 1em; margin-right: 20px; }
+	#footer #contact .footerBtn a { padding: 9px 15px; }
+  #footer #newsletter #signupForm input { margin: 0; }
+  #footer #newsletter #signupForm .footerBtn { margin: 0 0 0 3px; }
+  
+  #siteMap li { width: 108px; }
+  
+  .tp-simpleresponsive .tp-caption.Custom1 { top: 55px !important; }
+  .tp-simpleresponsive .tp-caption.Custom2 { top: 125px !important; width: 500px !important; }
+  .tp-simpleresponsive .tp-caption.Custom3 { top: auto !important; left: auto !important; right: 30px !important; bottom: 40px !important; }
+  .tp-leftarrow.default { top: 10px !important; }
+  .tp-rightarrow.default { top: 10px !important; }
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  #header .logo { margin: 0 0 0 0; }
+  body { padding: 0 !important; }
+	body > form { background: #ffffff; padding: 0; }
+        
+	#header { height: auto; border-bottom: 1px solid #c6c4be; padding: 10px 0; }
+        #header > .container { height: auto; }
+	#header img { width: 100px; }
+
+	#content, #SecondaryWrapper { margin: 110px 0; }
+        
+	#map img { display: block; margin: 0 auto; }
+
+	#mapWelcome #welcome h3 { font-size: 22px; line-height: 34px; }
+	#mapWelcome #welcome h2 { line-height: 62px; text-align: center; }
+  
+  #upcoming .ContentRotator .ContentRotator_Toggles { left: 0px; top: -17px; }
+  
+  .content-box { height: 460px; }
+  .content-box img { margin: 0 0 10px 0; }
+  .content-box .link { margin: 0 0 10px 0; }
+  
+  #highlightRotator { margin: 0 0 30px 0; padding: 0 0 30px 0; border-bottom: 1px dotted #000000; }
+  
+  .rsAbsoluteEl.Caption,
+  .rsDefault.rsHor .rsArrowRight .rsArrowIcn,
+  .rsDefault.rsHor .rsArrowLeft .rsArrowIcn{ display: none; };
+
+  #footer { padding: 0 0 20px 0; }
+	#footer #newsletter { float: left; }
+	#footer #newsletter #signupForm { width: 70%; margin: 0; } 
+        
+	#footer #contact { float: left; }
+	#footer #contact .footerBtn { margin: 30px auto 0 auto; float: none; width: 90%; text-align: center; }
+        
+        
+  #siteMap li { float: none; margin: 0 0 20px 0; }
+  
+  #hero { display: none; }
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	#mapWelcome #welcome h3 { font-size: 16px; line-height: 22px; }
+	#mapWelcome #welcome h2 { font-size: 46px; line-height: 46px; text-align: center; }
+
+  .content-box { height: 580px; }
+  .content-box h3 { font-size: 27px; line-height: 27px; }
+
+	#footer #newsletter #signupForm { width: 100%; padding: 5px 0 30px 0; }
+
+  #footer #contact span { font-size: 14px; }
+	#footer #contact > a { font-size: 14px; }
+}

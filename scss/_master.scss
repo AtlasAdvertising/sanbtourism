@@ -1,6 +1,6 @@
 /* **************************************** */
 /*                                          */
-/*         ======  Master  ======           */
+/*         ------  Master  ------           */
 /*                                          */
 /* **************************************** */
 
@@ -29,51 +29,54 @@ img {
 // 		Headers
 // ------------------------------------------
 
-h1,
-h2 {
-	letter-spacing: -0.025em;
-	margin: 35px 0 10px;
-}
+body {
+	h1,
+	h2 {
+		letter-spacing: -0.025em;
+		margin: 15px 0 10px;
+	}
 
-h3,
-h4,
-h5,
-h6 {
-	margin: 25px 0 0;
-}
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin: 25px 0 0;
+	}
 
-h4,
-h5,
-h6 {
-	color: $black;
-	font-family: Helvetica, Arial, sans-serif;
-}
+	h4,
+	h5,
+	h6 {
+		color: $black;
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: bold;
+	}
 
-h5,
-h6 {
-	text-transform: uppercase;
-}
+	h5,
+	h6 {
+		text-transform: uppercase;
+	}
 
-h1 {
-	@include header(55px);
-}
+	h1 {
+		@include header(55px);
+	}
 
-h2 {
-	@include header(38px);
-}
+	h2 {
+		@include header(38px);
+	}
 
-h3 {
-	@include header(30px);
-}
+	h3 {
+		@include header(30px);
+	}
 
-h4 {
-	font-size: 18px;
-}
+	h4 {
+		font-size: 18px;
+	}
 
-h5 {
-	font-size: 18px;
-}
+	h5 {
+		font-size: 18px;
+	}
 
-h6 {
-	font-size: 15px;
+	h6 {
+		font-size: 15px;
+	}
 }

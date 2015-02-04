@@ -1,0 +1,62 @@
+/* **************************************** */
+/*                                          */
+/*         ------  Contact  ------          */
+/*                                          */
+/* **************************************** */
+
+.contactMapWrapper {
+	background: $header-blue;
+}
+
+#ContactFormWrapper .FormButton {
+	@include button;
+  width: 100%;
+}
+
+
+
+/* ----------------------------------------- */
+// 								OLD SHIT
+/* ----------------------------------------- */
+/*# CONTACT US #*/
+.contactTitle { margin: 0; }
+#ContactFormWrapper{ background:#f4f4f4; padding:20px; }
+#ContactFormWrapper label{ font-weight:bold; font-family:arial; color:#222222; float:left; margin-right:3px;}
+#ContactFormWrapper textarea{ width:97%; }
+#ContactFormWrapper input{ width:97%; }
+#ContactFormWrapper table{ width:100%; }
+#ContactFormWrapper table label{ font-weight:normal; }
+#ContactFormWrapper table input{ width:auto; float:left; margin-right:6px; }
+.EditingFormControlNestedControl { clear: both; }
+.required{ float:left; color:red; }
+.EditingFormErrorLabel{ color:red; }
+.ErrorLabel{ color:red; }
+
+#ContactFormWrapper .valid-input { border-color: rgba(108, 190, 69, 0.8);
+outline: 0;
+outline: thin dotted \9;
+-webkit-box-shadow: inset 0 1px 1px rgba(108, 190, 69, 0.075), 0 0 8px rgba(108, 190, 69, 0.6);
+-moz-box-shadow: inset 0 1px 1px rgba(108, 190, 69, 0.075), 0 0 8px rgba(108, 190, 69, 0.6);
+box-shadow: inset 0 1px 1px rgba(108, 190, 69, 0.075), 0 0 8px rgba(108, 190, 69, 0.6); }
+
+#ContactFormWrapper .invalid-input { border-color: rgba(238, 42, 36, 0.8);
+outline: 0;
+outline: thin dotted \9;
+-webkit-box-shadow: inset 0 1px 1px rgba(238, 42, 36, 0.075), 0 0 8px rgba(238, 42, 36, 0.6);
+-moz-box-shadow: inset 0 1px 1px rgba(238, 42, 36, 0.075), 0 0 8px rgba(238, 42, 36, 0.6);
+box-shadow: inset 0 1px 1px rgba(238, 42, 36, 0.075), 0 0 8px rgba(238, 42, 36, 0.6); }
+
+.gmnoprint img {max-width: none !important;}
+#contactWrapper{margin-top:10px;}
+#officeInformation{margin:20px 0px 25px; border-bottom:1px solid #efefef; border-top:1px solid #efefef; padding-bottom:25px; padding-top:5px;}
+.contactMapWrapper{margin-bottom:20px;}
+.contactContentWrapper{margin-bottom:30px;}
+.officeName h4{font-size: 14px; margin: 0px !important;}
+/*# CONTACT US/Staff #*/
+.keyStaff{margin-bottom:30px;}
+.keyStaff h3{margin:0px; font-size:22px;}
+.keyStaff h4{margin:10px 0px; font-size:14px;}
+.keyStaff .staffBio{margin:10px 0px;}
+.keyStaff .staffLinkedin{float:left; padding-right:10px; border-right:1px solid #cccccc; margin-right:10px;}
+.keyStaff .staffPhone{float:left; padding-right:10px; border-right:1px solid #cccccc; margin-right:10px; line-height:32px;}
+.keyStaff .staffEmail{float:left; line-height:32px;}

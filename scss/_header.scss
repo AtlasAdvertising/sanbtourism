@@ -1,6 +1,6 @@
 /* **************************************** */
 /*                                          */
-/*         ======  Header  ======           */
+/*         ------  Header  ------           */
 /*                                          */
 /* **************************************** */
 
@@ -14,7 +14,7 @@
 	&:after {
 		background: #fff;
 		border-bottom: 3px solid $header-blue;
-		bottom: -6px;
+		bottom: -2px;
 		content: "";
 		left: 0;
 		height: 6px;
@@ -26,12 +26,12 @@
 
 #header {
 	.header-hump {
-		bottom: -50px;
+		bottom: -46px;
 		left: -110px;
 		max-width: none;
 		position: absolute;
 		width: 351px;
-		z-index: 2;
+		z-index: 3;
 	}
 }
 
@@ -74,5 +74,52 @@
 				text-decoration: underline; 
 			}
 		}
+	}
+}
+
+
+// 		Social Media
+// ------------------------------------------
+
+#socialMedia {
+  float: right;
+  height: 35px;
+  overflow: hidden;
+	ul { 
+		float: right; 
+		list-style: none; 
+		padding: 0;
+		position: relative;
+	} 
+	li { 
+		background: $light-blue;
+		color: #fff;
+		float: left; 
+		margin-left: 1px;
+		padding: 6px 12px;
+		&:hover { 
+			opacity: 0.65; 
+		}
+		a {
+			color: #fff;
+		}
+	}
+	#searchBox #search { 
+		float: right; 
+		margin: 3px 3px 0 0; 
+		opacity: 0; 
+		width: 0px; 
+	}
+	.search-open { 
+		z-index: 50; 
+	}
+	.search-closed { 
+		z-index: -1; 
+	}
+	#searchBtn { 
+		cursor: pointer; 
+	}
+	#searchbtn { 
+		display: none; 
 	}
 }

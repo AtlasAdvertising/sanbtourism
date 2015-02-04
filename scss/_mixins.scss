@@ -49,6 +49,63 @@
 	font-family: Helvetica, Arial, sans-serif;
 }
 
+@mixin blog-input {
+	background: #E3E3E3;
+	border: 1px solid #C2C2C2;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 7px;
+	vertical-align: top;
+	width: 75%;
+}
+
+@mixin header-rule {
+	border-bottom: 3px solid #25aae1;
+	margin: 0 0 20px 0;
+	padding: 0 0 5px 0;
+	position: relative;
+}
+
+@mixin button {
+	background: $light-blue;
+	border: 0;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	margin: 10px 0;
+	padding: 8px 20px;
+	text-transform: uppercase;
+	&:hover {
+	  background: $blue;
+	  color: #fff;
+	  text-decoration: none;
+	}
+}
+
+@mixin title {
+	color: $light-blue;
+	font-family: 'Futura W01 Medium', sans-serif;
+	font-size: 30px;
+	line-height: 1;
+	margin: 20px 0 10px;
+}
+
+@mixin back-link {
+	display: block;
+  font-family:'FuturaBTW01-MediumConde', sans-serif;
+  font-size: 26px;
+  margin: 50px 0 0;
+  .fa {
+		font-size: 20px;
+		padding-right: 10px;
+		position: relative;
+		top: -2px;
+	}
+}
+
 
 /* Placeholders */
 

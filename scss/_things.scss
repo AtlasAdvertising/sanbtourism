@@ -1,0 +1,38 @@
+/* **************************************** */
+/*                                          */
+/*      ------  Things to Do  ------        */
+/*                                          */
+/* **************************************** */
+
+
+#thingsToDoFeed h2 {
+  @include header(38px);
+  @include header-rule;
+}
+
+#thingsToDoList {
+  list-style: none;
+  padding: 0;
+}
+
+.back-link {
+	@include back-link;
+}
+
+.thingToDo {
+  overflow: hidden;
+  padding: 20px 0;
+  .col-sm-3 {
+  	padding-left: 0;
+  }
+	.title {
+	  @include title;
+	}
+	.description {
+	  font-size: 12px;
+	  line-height: 18px;
+	}
+	a {
+	  display: block;
+	}
+}
